@@ -5,7 +5,7 @@ import './index.css';
 
 render(
     <App />,
-  document.getElementById('head')
+  document.getElementById('root')
 );
 
 
