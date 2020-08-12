@@ -1,9 +1,9 @@
 import React from 'react';
-import { Sidebar } from './sidebar';
-export const Content = () => {
-    return (
-        <aside className="sidebar">
-            <Sidebar/>
-        </aside>
-    );
+export const Content = (props) => {
+return (
+    <div className="props">
+    <p>Some Contents for { props.name } { props.surname }</p>
+    { props.children }
+    </div>
+);
 };
