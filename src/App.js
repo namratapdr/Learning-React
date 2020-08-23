@@ -3,14 +3,37 @@ import Products from './product'
 import Product from './componnents/layouts/product-display'
 
 export const App = () => {
-  const productComponents = Products.map(product => <Product key= {product.id}  name= {product.name} description = {product.description} price= {product.price}/>)
-
+  const productComponents = Products.map(product => <Product key = { product.id } id= {product.id}  name= {product.name} description = {product.description} price= {product.price}/>)
+  const date = new Date()
   return (
     <div className="Products">
+      <div>{date.getDate()}/{ date.getMonth()}/{date.getFullYear()}</div>
       {productComponents}
     </div>
   )
 }
+
+
+/*
+Class Components
+for using Component in the next line import React , {Component} from 'react
+OR use React.Component
+export class App() extends Component {
+  myMethod(){
+
+  }
+  render(){
+    const callMyMethod = this.myMethod()
+    return (
+      <div> 
+      Put Jsx here
+      call props using {this.props.whatever}
+      </div>
+    )
+  }
+}
+ */
+
 
 /*
 //This is importing data from json like format file and displaying it as an array

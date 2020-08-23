@@ -20,8 +20,14 @@ const Products = [
     {
         id:4,
         name:"Collar belt",
-        description: "<35 cm belt for big dogs",
+        description: "< 35 cm belt for big dogs",
         price:"200"
+    },
+    {
+        id: 5,
+        name: "Bottle",
+        description: "Keep hydrated",
+        price : "150"
     }
 ]
 
