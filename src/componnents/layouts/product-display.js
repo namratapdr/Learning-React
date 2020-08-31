@@ -5,7 +5,7 @@ const Product = (props) => {
             <div className="product">
                 <h1>Product {props.id}</h1>
                  <h3>Name : {props.name}</h3>
-                 <h3>Description: {props.decription}</h3>
+                 <h3 style={{color:"blue"}}>Description: {props.description}</h3>
                  <h2>Price : {props.price}</h2>
             </div>
         )

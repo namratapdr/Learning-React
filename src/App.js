@@ -1,19 +1,21 @@
 import React from 'react'
-import Products from './product'
-import Product from './componnents/layouts/product-display'
+//import {EventHandler} from './componnents/layouts/events'
+import {Counter} from './componnents/layouts/CounterApp'
 
 export const App = () => {
-  const productComponents = Products.map(product => <Product key = { product.id } id= {product.id}  name= {product.name} description = {product.description} price= {product.price}/>)
+  
   const date = new Date()
   return (
-    <div className="Products">
+    <div className="Events">
       <div>{date.getDate()}/{ date.getMonth()}/{date.getFullYear()}</div>
-      {productComponents}
+
+        <Counter/>
     </div>
   )
 }
-
-
+/*import Display from './produvt-state'
+<Display/> 
+*/
 /*
 Class Components
 for using Component in the next line import React , {Component} from 'react
