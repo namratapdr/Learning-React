@@ -40,7 +40,7 @@ class LcMethods extends Component {
     }
     componentWillUnmount(){
         /**
-         * This method is used to celan up your component code 
+         * This method is used to clean up your component code 
          * before it disappears (like when it's gone after a scroll)
          * (removeEventListener type functionalities are used in this)
          */

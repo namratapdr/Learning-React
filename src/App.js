@@ -1,6 +1,9 @@
 import React from 'react'
 //import {EventHandler} from './componnents/layouts/events'
 import {Counter} from './componnents/layouts/CounterApp'
+import {Condition} from './componnents/layouts/conditionDisplay'
+import {Log} from './componnents/layouts/logged'
+import {StarWars} from './componnents/layouts/fetchApiData'
 
 export const App = () => {
   
@@ -10,6 +13,9 @@ export const App = () => {
       <div>{date.getDate()}/{ date.getMonth()}/{date.getFullYear()}</div>
 
         <Counter/>
+        <Condition/>
+        <Log/>
+        <StarWars/>
     </div>
   )
 }
